@@ -1,0 +1,33 @@
+.card {
+  background-image: #ffc999;
+  background-image: radial-gradient(
+      at 11% 1%,
+      rgb(61, 224, 148) 0,
+      transparent 40%
+    ),
+    radial-gradient(at 100% 48%, hsla(345, 96%, 62%, 1) 0, transparent 100%),
+    radial-gradient(at 21% 67%, hsla(219, 73%, 61%, 1) 0, transparent 52%),
+    radial-gradient(at 31% 47%, hsla(77, 77%, 68%, 1) 0, transparent 55%),
+    radial-gradient(at 53% 98%, hsla(102, 77%, 67%, 1) 0, transparent 70%),
+    radial-gradient(at 34% 66%, hsla(303, 64%, 71%, 1) 0, transparent 56%),
+    radial-gradient(at 60% 85%, hsla(182, 80%, 65%, 1) 0, transparent 48%);
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.21);
+  border-radius: 16px;
+  aspect-ratio: 1.586;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heroSection {
+  padding: 20px;
+}
+
+@media (max-width: 992px) {
+  .heroSection {
+    row-gap: 4rem;
+    padding: 4rem 0;
+  }
+}
