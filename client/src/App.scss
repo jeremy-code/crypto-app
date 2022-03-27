@@ -1,0 +1,39 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+$body-bg: hsl(240, 35%, 6%);
+$body-color: hsl(0, 0%, 100%);
+$text: hsl(0, 0%, 100%);
+$text-muted: hsl(240, 2%, 59%);
+$card-background: hsl(240, 15%, 25%);
+$primary: hsl(245, 58%, 51%);
+
+$theme-colors: (
+  "primary": hsl(245, 58%, 51%),
+);
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+@import "bootstrap";
+
+:root {
+  --bs-font-sans-serif: "Montserrat", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  --bs-primary-rgb: 70, 58, 203;
+}
+
+.form-floating > label {
+  color: $text-muted;
+}
+
+.text-tracking {
+  letter-spacing: 0.05em;
+}

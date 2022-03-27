@@ -62,7 +62,7 @@ export const TransactionProvider = ({ children }) => {
         setCurrentAccount(accounts[0]);
         getAllTransactions();
       } else {
-        alert("Please connect to MetaMask. No accounts found");
+        console.log("Please connect to MetaMask. No accounts found");
       }
     } catch (error) {
       console.log(error);

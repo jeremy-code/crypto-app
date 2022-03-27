@@ -1,20 +1,13 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-
-import "./App.css";
-import { Navbar, Welcome, Footer, Services, Transactions } from "./components";
-
+import "./App.scss";
+import { HomePage, Cryptocurrencies, Exchanges, News } from "./views";
+import { Router } from "./components";
 
 const App = () => {
   return (
-    <>
-      <div className="hero">
-        <Navbar />
-        <Welcome />
-      </div>
-      <Services />
-      <Transactions />
-      <Footer />
-    </>
+    <Router
+      paths={["/", "cryptocurrencies", "exchanges", "news"]}
+      elements={[<HomePage />, <Cryptocurrencies />, <Exchanges />, <News />]}
+    />
   );
 };
 
