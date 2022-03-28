@@ -9,7 +9,7 @@ const HomePage = () => {
     <TransactionProvider>
       <Hero />
       <Section title="Features" subtitle="Our Platform">
-        <Row xs={1} sm={1} md={1} lg={3} className="g-5">
+        <Row xs={1} sm={1} md={1} lg={3} className="g-3">
           <AboutCard
             icon={<FaShieldAlt />}
             title="Security"
