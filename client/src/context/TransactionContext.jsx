@@ -56,7 +56,9 @@ export const TransactionProvider = ({ children }) => {
 
   const checkIfWalletConnected = async () => {
     try {
-      if (!ethereum) return alert("Please connect to MetaMask");
+      if (!ethereum) {
+        console.log("Please connect to MetaMask");
+      }
       const accounts = await ethereum.request({ method: "eth_accounts" });
       if (accounts.length !== 0) {
         setCurrentAccount(accounts[0]);

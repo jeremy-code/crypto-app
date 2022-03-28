@@ -1,0 +1,16 @@
+.link {
+  font-weight: 900;
+  text-decoration: none;
+  color: #463acb;
+  border-bottom: 1px solid #463acb;
+  padding-bottom: 2px;
+  padding-inline: 2px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: #463acb;
+    border-bottom: 1px solid #fff;
+  }
+}

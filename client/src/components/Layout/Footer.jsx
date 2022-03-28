@@ -1,9 +1,6 @@
-const Footer = () => {
-  const styles = {
-    textDecoration: "text-decoration-skip",
-    color: "#463acb",
-  };
+import styles from "./Footer.module.scss";
 
+const Footer = () => {
   return (
     <footer>
       <div className="container py-4 d-flex justify-content-center">
@@ -13,7 +10,7 @@ const Footer = () => {
             href="https://jeremynguyen.dev"
             target="_blank"
             rel="noopener noreferrer"
-            style={styles}
+            className={styles.link}
           >
             Jeremy Nguyen
           </a>

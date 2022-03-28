@@ -5,6 +5,7 @@ export { default as TransactionCard } from "./Card/TransactionCard/TransactionCa
 
 // Form
 export { default as TransferForm } from "./Form/TransferForm";
+export { default as TransferFormContainer } from "./Form/TransferFormContainer";
 
 // Hero
 export { default as Hero } from "./Hero/Hero";
@@ -23,3 +24,4 @@ export { default as Router } from "./Routing/Router";
 
 // Transactions
 export { default as Transactions } from "./Transactions/Transactions";
+
